@@ -35,3 +35,11 @@ The project is structured as follows:
    - middleware: contains all the middleware functions
    - models: database schema
    - routes: contains all the api routes
+
+## ⚙️ Tech Stack
+
+- Node.js - Express.js
+- Neon Postgres and Drizzle ORM
+- [Winston](https://www.npmjs.com/package/winston): universal logging library `src/config/logger.js`
+- [Helmet](https://www.npmjs.com/package/helmet) : help secure Express apps by setting various HTTP headers
+- [morgan](https://www.npmjs.com/package/morgan): HTTP request logger middleware
