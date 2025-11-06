@@ -2,6 +2,24 @@
 
 An API project developed using Docker, Warp, Arcjet, with automated CI/CD, and a backend implemented with Node.js, Express.js, Neon Postgres, Drizzle ORM, and Zod—secure, scalable, and production-ready.
 
+## Setup
+
+- Install eslint and prettier dependencies to format the code
+
+```bash
+npm i eslint  @eslint/js prettier eslint-config-prettier eslint-plugin-prettier -D
+```
+
+- After installing, you usually create an config file: `eslint.config.js` and `.prettierrc`
+- Add the following scripts to `package.json` to format and lint the code
+
+```json
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+```
+
 ## Project Structure
 
 The project is structured as follows:
