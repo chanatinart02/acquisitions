@@ -4,7 +4,7 @@ An API project developed using Docker, Warp, Arcjet, with automated CI/CD, and a
 
 ## Setup
 
-- Install eslint and prettier dependencies to format the code
+1. Install eslint and prettier dependencies to format the code
 
 ```bash
 npm i eslint  @eslint/js prettier eslint-config-prettier eslint-plugin-prettier -D
@@ -19,6 +19,10 @@ npm i eslint  @eslint/js prettier eslint-config-prettier eslint-plugin-prettier 
     "format": "prettier --write .",
     "format:check": "prettier --check ."
 ```
+
+2. Setup database using [NEON](https://neon.com/docs/guides/drizzle)
+   - After Create db schema `models/user.model.js`, run `npm run db:generate`
+   - Apply migrations to your Neon database `npm run db:migrate`
 
 ## Project Structure
 
